@@ -34,4 +34,4 @@ use Streaming\FFMpeg;
 
 Route::get('/hello', function () {
     echo 'hello';
-});
+})->middleware('web');
