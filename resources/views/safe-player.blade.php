@@ -26,7 +26,6 @@
         var player;
         const videoSrc = "{{ $video_src }}";
         const video = document.getElementById('safe-player');
-        video.setAttribute('Content-Type' , 'video/MP2T');
         const defaultOptions = {};
 
         if (Hls.isSupported()) {
