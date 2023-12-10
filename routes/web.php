@@ -27,10 +27,11 @@ use Streaming\FFMpeg;
 //        ->autoGenerateRepresentations([720])
 //        ->save(public_path('video/hls/nature/stream.m3u8'));
 //});
-//
-//Route::get('/safe-player', function () {
+
+Route::get('/safe-player', function () {
 //    return view('safe-player', ['video_src' => asset('video/hls/nature/stream.m3u8')]);
-//});
+    return view('safe-player', ['video_src' => asset('https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8')]);
+});
 
 Route::get('/', function () {
     echo 'hello';
