@@ -32,6 +32,6 @@ use Streaming\FFMpeg;
 //    return view('safe-player', ['video_src' => asset('video/hls/nature/stream.m3u8')]);
 //});
 
-Route::get('/hello', function () {
+Route::get('/', function () {
     echo 'hello';
-})->middleware('web');
+});
