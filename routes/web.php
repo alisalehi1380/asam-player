@@ -29,8 +29,8 @@ use Streaming\FFMpeg;
 //});
 
 Route::get('/safe-player', function () {
-//    return view('safe-player', ['video_src' => asset('video/hls/nature/stream.m3u8')]);
-    return view('safe-player', ['video_src' => asset('https://asamacademy.online/store/1/test/nature/stream_360p.m3u8')]);
+    return view('safe-player', ['video_src' => asset('video/hls/nature/stream.m3u8')]);
+//    return view('safe-player', ['video_src' => asset('https://asamacademy.online/store/1/test/nature/stream_360p.m3u8')]);
 });
 
 Route::get('/', function () {
