@@ -24,8 +24,8 @@
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         var player;
-{{--        const videoSrc = "{{ $video_src }}";--}}
-        const videoSrc = "{{ route('video.playlist' , ['playlist' => 'stream.m3u8']) }}";
+        const videoSrc = "{{ asset('storage/videos/nature.m3u8') }}";
+{{--        const videoSrc = "{{ route('video.playlist' , ['playlist' => 'stream.m3u8']) }}";--}}
         const video = document.getElementById('safe-player');
         const defaultOptions = {};
 
